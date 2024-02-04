@@ -2,29 +2,27 @@ import {
     AiFillGithub,
     AiFillGoogleCircle,
     AiOutlineClose,
-    AiOutlineEllipsis,
-    AiOutlinePlus,
-    AiOutlineWarning,
-    AiOutlineDollarCircle,
-    AiOutlineBank,
-    AiOutlineDashboard,
 } from "react-icons/ai";
-import { BiCalendar, BiHistory } from "react-icons/bi";
+import { BiCalendar } from "react-icons/bi";
 import {
-    BsActivity,
-    BsCheck2,
     BsChevronDown,
     BsChevronLeft,
     BsChevronRight,
     BsChevronUp,
     BsFire,
 } from "react-icons/bs";
-import { FaRegStar, FaSort, FaUserAlt } from "react-icons/fa";
-import { ImSpinner8, ImStatsBars } from "react-icons/im";
+import {
+    FaRegStar,
+    FaRegLightbulb,
+    FaCheck,
+    FaCode,
+    FaProjectDiagram,
+} from "react-icons/fa";
 import { LuSettings } from "react-icons/lu";
-import { MdDeleteForever, MdOutlineLogout } from "react-icons/md";
-import { RxDashboard, RxMixerHorizontal } from "react-icons/rx";
-import { IoCopy } from "react-icons/io5";
+import { RxDashboard } from "react-icons/rx";
+import { IoAccessibility, IoGameControllerOutline } from "react-icons/io5";
+import { FaXTwitter, FaLinkedin, FaPeopleGroup } from "react-icons/fa6";
+import { LuRadar, LuBarChartHorizontalBig } from "react-icons/lu";
 
 export type IconKeys = keyof typeof icons;
 
@@ -36,11 +34,12 @@ const icons = {
     // Providers
     google: AiFillGoogleCircle,
     github: AiFillGithub,
+    linkedin: FaLinkedin,
+    twitter: FaXTwitter,
 
     // Sections Icons
     dashboard: RxDashboard,
     settings: LuSettings,
-    holdings: AiOutlineDashboard,
 
     // Navigation
     back: BsChevronLeft,
@@ -50,25 +49,18 @@ const icons = {
     close: AiOutlineClose,
 
     // Common
-    trash: MdDeleteForever,
-    spinner: ImSpinner8,
-    userAlt: FaUserAlt,
-    ellipsis: AiOutlineEllipsis,
-    warning: AiOutlineWarning,
-    add: AiOutlinePlus,
-    history: BiHistory,
-    signout: MdOutlineLogout,
     calendar: BiCalendar,
-    sort: FaSort,
     fire: BsFire,
-    statsBar: ImStatsBars,
-    mixer: RxMixerHorizontal,
-    check: BsCheck2,
     star: FaRegStar,
-    copy: IoCopy,
-    dollar: AiOutlineDollarCircle,
-    bank: AiOutlineBank,
-    activity: BsActivity,
+    bulb: FaRegLightbulb,
+    check: FaCheck,
+    radar: LuRadar,
+    accessibility: IoAccessibility,
+    people: FaPeopleGroup,
+    scale: LuBarChartHorizontalBig,
+    gamification: IoGameControllerOutline,
+    code: FaCode,
+    project: FaProjectDiagram,
 };
 
 export const Icons: IconsType = icons;
