@@ -11,6 +11,7 @@ import Team from "@/components/Team";
 import Pricing from "@/components/Pricing";
 import Newsletter from "@/components/Newsletter";
 import FAQ from "@/components/FAQ";
+import OpenSource from "@/components/OpenSource";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -30,6 +31,7 @@ export default function Home() {
             <Pricing />
             <Newsletter />
             <FAQ />
+            <OpenSource />
             <Footer />
             <ScrollToTop />
         </>
