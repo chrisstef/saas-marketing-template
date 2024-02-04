@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { Menu } from "lucide-react";
+
 import {
     NavigationMenu,
     NavigationMenuItem,
@@ -15,10 +18,9 @@ import {
 } from "@/components/ui/sheet";
 
 import { buttonVariants } from "./ui/button";
-import { Menu } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
 import { Icons } from "@/components/Icons";
-import Link from "next/link";
+
 import { Logo } from "./Logo";
 
 interface RouteProps {
@@ -70,7 +72,7 @@ const Navbar = () => {
 
                             <SheetContent side={"left"}>
                                 <SheetHeader>
-                                    <SheetTitle className="font-bold text-xl">
+                                    <SheetTitle className="font-bold text-xl text-start">
                                         SaaS Marketing
                                     </SheetTitle>
                                 </SheetHeader>
