@@ -1,8 +1,9 @@
+import Link from "next/link";
+
 import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 import { HeroCards } from "./HeroCards";
 import { Icons } from "@/components/Icons";
-import Link from "next/link";
 
 const Hero = () => {
     return (

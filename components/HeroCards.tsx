@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
+
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -12,7 +15,6 @@ import {
     CardFooter,
 } from "@/components/ui/card";
 import { Icons } from "@/components/Icons";
-import Link from "next/link";
 
 export const HeroCards = () => {
     return (
@@ -40,10 +42,13 @@ export const HeroCards = () => {
             {/* Team */}
             <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="mt-8 flex justify-center items-center pb-2">
-                    <img
-                        src="https://avatars.githubusercontent.com/u/63172663?v=4"
+                    <Image
+                        src="/myavatar.webp"
                         alt="user avatar"
-                        className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
+                        width={100}
+                        height={100}
+                        className="absolute -top-12 rounded-full w-24 h-24"
+                        priority
                     />
                     <CardTitle className="text-center">chrisstef</CardTitle>
                     <CardDescription className="font-normal text-primary">
