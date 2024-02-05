@@ -13,7 +13,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { buttonVariants } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import { ModeToggle } from "./ModeToggle";
 import { Icons } from "@/components/Icons";
 
@@ -59,12 +59,14 @@ const Navbar = () => {
                     <div className="flex md:hidden">
                         <ModeToggle />
                         <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                            <SheetTrigger className="px-2">
-                                <Menu
-                                    className="flex md:hidden h-5 w-5"
-                                    onClick={() => setIsOpen(true)}
-                                ></Menu>
-                            </SheetTrigger>
+                            <Button
+                                onClick={() => setIsOpen(true)}
+                                variant="ghost"
+                                className="px-2"
+                            >
+                                <span className="sr-only">Open Menu</span>
+                                <Menu className="flex md:hidden h-5 w-5" />
+                            </Button>
 
                             <SheetContent side={"left"}>
                                 <SheetHeader>

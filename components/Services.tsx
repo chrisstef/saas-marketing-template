@@ -12,19 +12,25 @@ const serviceList: ServiceProps[] = [
         title: "Code Collaboration",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <Icons.code className="h-6 w-6 text-orange-500" />,
+        icon: (
+            <Icons.code className="h-6 w-6 dark:text-orange-500 text-blue-500" />
+        ),
     },
     {
         title: "Project Management",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <Icons.dashboard className="h-6 w-6 text-orange-500" />,
+        icon: (
+            <Icons.dashboard className="h-6 w-6 dark:text-orange-500 text-blue-500" />
+        ),
     },
     {
         title: "Task Automation",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <Icons.project className="h-6 w-6 text-orange-500" />,
+        icon: (
+            <Icons.project className="h-6 w-6 dark:text-orange-500 text-blue-500" />
+        ),
     },
 ];
 
