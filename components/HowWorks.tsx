@@ -9,25 +9,33 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
     {
-        icon: <Icons.accessibility className="text-orange-500 w-7 h-7" />,
+        icon: (
+            <Icons.accessibility className="dark:text-orange-500 text-blue-500 w-7 h-7" />
+        ),
         title: "Accesibility",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
     },
     {
-        icon: <Icons.people className="text-orange-500 w-7 h-7" />,
+        icon: (
+            <Icons.people className="dark:text-orange-500 text-blue-500 w-7 h-7" />
+        ),
         title: "Community",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
     },
     {
-        icon: <Icons.scale className="text-orange-500 w-7 h-7" />,
+        icon: (
+            <Icons.scale className="dark:text-orange-500 text-blue-500 w-7 h-7" />
+        ),
         title: "Scalability",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
     },
     {
-        icon: <Icons.gamification className="text-orange-500 w-7 h-7" />,
+        icon: (
+            <Icons.gamification className="dark:text-orange-500 text-blue-500 w-7 h-7" />
+        ),
         title: "Gamification",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
