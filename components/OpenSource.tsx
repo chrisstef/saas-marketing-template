@@ -17,7 +17,7 @@ const OpenSource = async () => {
     return (
         <section className="container py-24 sm:py-32">
             <div className="flex flex-col items-center gap-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
                     Fully
                     <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                         {" "}
@@ -32,7 +32,7 @@ const OpenSource = async () => {
                     )}
                 >
                     <Icons.star className="mr-2 h-4 w-4" />
-                    <span>{stars} on Github</span>
+                    <span>{stars} on GitHub</span>
                 </Link>
             </div>
         </section>
