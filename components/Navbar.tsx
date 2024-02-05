@@ -106,7 +106,7 @@ const Navbar = () => {
                                         )}`}
                                     >
                                         <Icons.github className="mr-2 h-4 w-4" />
-                                        Github
+                                        GitHub
                                     </Link>
                                 </div>
                             </SheetContent>
@@ -143,7 +143,7 @@ const Navbar = () => {
                                 })}`}
                             >
                                 <Icons.github className="mr-2 h-4 w-4" />
-                                Github
+                                GitHub
                             </Link>
 
                             <ModeToggle />
