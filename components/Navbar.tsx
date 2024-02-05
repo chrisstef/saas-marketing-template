@@ -4,11 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+import { NavigationMenu } from "@/components/ui/navigation-menu";
 import {
     Sheet,
     SheetContent,
@@ -50,14 +46,14 @@ const routeList: RouteProps[] = [
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     return (
-        <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+        <nav className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
             <NavigationMenu className="mx-auto">
-                <NavigationMenuList className="container h-16 px-4 w-screen flex justify-between ">
-                    <NavigationMenuItem className="font-bold flex">
+                <div className="container h-16 px-4 w-screen flex justify-between items-center">
+                    <div className="font-bold flex">
                         <Link href="/" className="ml-2 font-bold text-xl flex">
                             <Logo />
                         </Link>
-                    </NavigationMenuItem>
+                    </div>
 
                     {/* mobile */}
                     <div className="flex md:hidden">
@@ -76,7 +72,7 @@ const Navbar = () => {
                                         SaaS Marketing
                                     </SheetTitle>
                                 </SheetHeader>
-                                <nav className="flex flex-col justify-center items-start space-y-3 mt-6">
+                                <div className="flex flex-col justify-center items-start space-y-3 mt-6">
                                     <ul className="flex flex-col space-y-3">
                                         {routeList.map(
                                             ({ href, label }: RouteProps) => (
@@ -112,13 +108,13 @@ const Navbar = () => {
                                         <Icons.github className="mr-2 h-4 w-4" />
                                         Github
                                     </Link>
-                                </nav>
+                                </div>
                             </SheetContent>
                         </Sheet>
                     </div>
 
                     {/* desktop */}
-                    <nav className="hidden md:flex gap-2">
+                    <div className="hidden md:flex gap-2">
                         <ul className="flex space-x-2">
                             {routeList.map((route: RouteProps, i) => (
                                 <li key={i}>
@@ -135,30 +131,27 @@ const Navbar = () => {
                                 </li>
                             ))}
                         </ul>
-                    </nav>
+                    </div>
 
                     <div className="hidden md:flex gap-2">
-                        <ul className="flex space-x-2">
-                            <li>
-                                <Link
-                                    href="https://github.com/chrisstef/saas-marketing-template.git"
-                                    target="_blank"
-                                    className={`border ${buttonVariants({
-                                        variant: "secondary",
-                                    })}`}
-                                >
-                                    <Icons.github className="mr-2 h-4 w-4" />
-                                    Github
-                                </Link>
-                            </li>
-                            <li>
-                                <ModeToggle />
-                            </li>
-                        </ul>
+                        <div className="flex space-x-2">
+                            <Link
+                                href="https://github.com/chrisstef/saas-marketing-template.git"
+                                target="_blank"
+                                className={`border ${buttonVariants({
+                                    variant: "secondary",
+                                })}`}
+                            >
+                                <Icons.github className="mr-2 h-4 w-4" />
+                                Github
+                            </Link>
+
+                            <ModeToggle />
+                        </div>
                     </div>
-                </NavigationMenuList>
+                </div>
             </NavigationMenu>
-        </header>
+        </nav>
     );
 };
 
