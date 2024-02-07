@@ -40,8 +40,8 @@ const Hero = () => {
                             variant: "outline",
                         })}`}
                     >
-                        <Icons.github className="mr-2 h-4 w-4" />
                         GitHub
+                        <Icons.github className="ml-2 h-4 w-4" />
                     </Link>
                 </div>
             </div>
