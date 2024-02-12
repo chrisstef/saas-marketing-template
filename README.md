@@ -1,6 +1,6 @@
 # SaaS Marketing Template
 
-This repo streamlines Next.js landing page development with TailwindCSS + ShadcnUI components.
+A production-ready landing page template, made with Next.js, TailwindCSS & ShadcnUI. It is the perfect starting point for your own project.
 
 ## Sections
 
