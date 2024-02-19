@@ -37,7 +37,7 @@ A production-ready landing page template, made with Next.js, TailwindCSS & Shadc
 git clone https://github.com/chrisstef/saas-marketing-template.git
 ```
 
-2. Go into the project
+2. Navigate into the project directory
 
 ```bash
 cd saas-marketing-template
