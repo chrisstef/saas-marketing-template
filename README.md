@@ -31,19 +31,19 @@ A production-ready landing page template, made with Next.js, TailwindCSS & Shadc
 
 ## How to install
 
-1. Clone this repositoy:
+1. Clone this repository:
 
 ```bash
 git clone https://github.com/chrisstef/saas-marketing-template.git
 ```
 
-2. Navigate into the project directory
+2. Navigate into the project directory:
 
 ```bash
 cd saas-marketing-template
 ```
 
-3. Install dependencies
+3. Install dependencies:
 
 ```bash
 npm install
@@ -55,7 +55,7 @@ or
 yarn
 ```
 
-4. Run project
+4. Run project:
 
 ```bash
 npm run dev
