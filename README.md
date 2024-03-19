@@ -1,6 +1,6 @@
 # SaaS Marketing Template
 
-A production-ready landing page template, made with Next.js, TailwindCSS & ShadcnUI. It is the perfect starting point for SaaS landing page development.
+A production-ready landing page template, made with Next.js, TailwindCSS & ShadcnUI. It serves as starting point for SaaS landing page development.
 
 ## Sections
 
